@@ -1,0 +1,336 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color:#bbb;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width:100%;
+    background-image:url(../img/vector.jpg);
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+}
+.container{
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+   
+}
+ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+header{
+ padding-top: 30px;
+ min-height: 70px;
+}header img{
+ width: 30px;
+}
+header a{
+    color:black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 400;
+}
+header li{
+    float: left;
+    display: inline;
+    padding: 0 15px 0 15px;     
+
+}.open-menu, .close-menu{
+    position: absolute;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-top: -5px;
+    display: none;
+}
+.close-menu{
+    right: 30px;
+    margin-top: 35px;
+    top: 0;
+}
+
+#check{display: none;}
+.log-out{
+   border: none;
+    background-color: #000;
+    color: #fff; 
+    border-radius: 10px;
+    font-size: 14px;
+    padding:5px 20px 5px 20px;
+  margin-top: -7px;
+ filter: opacity(0.8);
+ transition:all 0.3s ease;
+ margin-right: 5px;
+ float: left;
+   
+}
+.log-out:hover{
+transform: scale(1.1);
+box-shadow: 0 0 10px rgba(22, 11, 11, 0.2);
+background-color: #362e2a;
+}
+header #branding{
+    float: left;
+}
+header #branding h1{
+    margin: 0;
+   
+}
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+header .current a{
+    color: #ef8854;
+    font-weight: bold;
+}
+
+.showcase{
+    min-height: 400px;
+    background: url('../img/jacket.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-size: 500px;
+}
+.showcase h1{
+    margin-top: 100px;
+    font-size: 150px;
+    letter-spacing: 20px;
+    font-weight: bolder;
+    color: transparent;
+    -webkit-text-stroke: 2px #ef8854;
+}
+.highlight{
+    color: white;
+    -webkit-text-stroke:0;
+}.showcase p{
+   margin-left: 20px;
+   font-size: large;
+   margin-bottom: -5px;
+   font-weight: bolder; 
+}
+.section2{
+    margin-top: 20px;
+    background-color:#362e2a;
+    border-radius: 6px;
+   flex-direction: column;
+   color: #fff;
+   position: relative;
+   display: flex;
+   justify-content: center;
+   font-weight: bolder;
+   z-index: 1;
+   
+}
+.section2::before{
+     content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width:100%;
+    background-image:url(../img/vector.jpg);
+    background-size: 160%;
+    background-repeat: no-repeat;
+    background-position: 55%;
+    z-index: -1;
+}
+#Newsletter{
+    color: #fff;
+    font-weight: bold;
+    border: 1px solid #ef8854;
+    padding: 20px;  
+}
+#Newsletter h1{
+    float: left;
+    font-size: 20px;
+}
+#Newsletter form{
+    float: right;
+   margin-top: 10px;
+}
+#Newsletter input[type="email"]{
+    padding: 4px;
+    height: 25px;
+    width: 200px;
+    background: 0;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+}
+.button_1{
+    height: 38px;
+    background: #ef8854;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.section3{
+    display: flex;
+    margin-top: 40px;
+    gap: 60px;
+   
+}
+.jacket-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.jacket-background{
+    background: linear-gradient(to bottom, #fff, #fff) padding-box, #aaa;
+     opacity: 0.2;
+    filter: blur(3px);
+    border-radius: 20px;
+}
+.second-background{
+    position:absolute;
+    top: 15px;
+    width: 60%;
+    border-radius: 10px;
+    background-color: #ccc;
+    opacity: 0.7;
+    z-index: -1;
+    height: 100%;
+    margin-bottom: 20px;
+
+}
+.ourServices{
+    width: 80%;
+}
+main{
+    display: flex;  
+    margin-top: 40px;
+}
+.whatWeDo{
+   background: black;
+   color: #fff;
+   font-weight: 400;
+   position: relative;
+   z-index: 1;
+  
+}
+.whatWeDo::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #362e2a;
+    border-radius: 50px;
+    z-index: -1;
+}
+.whatWeDo p, .aboutUs p{
+padding-left: 20px;
+}
+.aboutUs{
+    border: 1px solid #ccc;
+    background: #a5a1a1;  
+    font-weight: 400;  
+    border-radius: 30px;
+}
+.aboutUs h1, .whatWeDo h1{
+    border-bottom: 2px solid #aaa;
+    padding-bottom: 15px;
+   font-weight: bolder;
+   padding-left: 20px;
+}
+footer{
+   padding: 10px;
+   margin-top: 20px;
+   color: #fff;
+   margin-bottom: 20px;
+   background-color: #ef8854;
+   text-align: center;
+}
+@media only screen and (max-width:610px){
+.menu{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 100;
+    background-color: #362e2a;
+    transition: all 0.2s ease-in-out;
+    
+}
+.menu li, .menu button {margin-top: 40px;}
+.menu li a, .menu button{padding: 10px;}
+.open-menu, .close-menu{display: block;}
+#check:checked ~ .menu {right: 0;}
+
+header a{
+    color: #fff;
+}
+
+#Newsletter form{
+    float: left;
+}
+#Newsletter input[type="email"]{
+    width: 150px;
+}
+.button_1{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.showcase{
+    background-size: 350px;
+}
+.showcase h1{
+    font-size:100px;
+    margin-top: 120px;
+}.showcase p{
+font-size: 12px;
+margin: 0 auto;
+
+}
+.section3{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+main{
+    flex-direction: column;
+    gap: 25px;
+}
+}
+@media only screen and (max-width:430px){
+    .showcase h1{
+    font-size:80px;
+}
+.showcase p{
+    font-size: 13px;
+    margin-top:110px;
+   
+}
+}
+@media only screen and (max-width:375px){
+    .showcase h1{
+    font-size:60px;
+
+    
+}
+}

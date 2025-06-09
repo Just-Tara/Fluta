@@ -1,0 +1,261 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color:#bbb;
+    font-family:Arial, Helvetica, sans-serif;
+    height: 100vh;
+    width: 100%;
+   
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width:100%;
+    background-image:url(../img/vector.jpg);
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+}
+.content{
+    text-align: center; 
+   position: relative;
+   top: 20%;
+   overflow: hidden;
+
+}
+.content img{
+    width: 40px;
+    position: relative;
+}
+.content h1{
+    font-size: 60px;
+   margin-bottom:25px;
+    font-family:'Franklin Gothic Medium', 'Arial wide', Arial, sans-serif;
+}
+.content p{
+    font-size: 20px;
+    margin-top: -20px;
+}
+.content section{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    justify-content: center;
+    height: 30vh;
+}
+.loginPage button, .loginPage a{
+    list-style: none;
+    color: #ef8854;
+    transition: all 0.3s ease;
+   
+} .content button{
+    background: none;
+    width: 40%;
+    height: 38px;
+    border:2px solid #ef8854;
+    cursor: pointer;
+}
+.createPage button, .createPage button a {
+    background-color: #ef8854;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}.createPage button:hover, .createPage button a:hover, .loginPage button:hover, .loginPage a:hover {
+    transform: scale(1.1);
+}
+.content section button a{
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.container{
+    display: flex;
+    overflow: hidden;
+   
+}.fluto-design {
+  width: 35%;
+  height: 100vh;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center; 
+}
+
+.jacket-image {
+  position: absolute;
+  width: 95%;
+  display: block;
+  left: 35%; 
+  top: 55%;
+  transform: translateY(-50%);
+}
+
+.logo-image, .fluto-design h2 {
+  position: relative;
+  top: 5%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-image{
+    margin: auto;
+    
+}
+
+.login-details{
+    background-color:black;
+    height: 100vh;
+    border-radius: 6px;
+   width: 65%;
+   flex-direction: column;
+   color: #fff;
+   position: relative;
+   display: flex;
+   justify-content: center;
+   font-weight: bolder;
+   z-index: 1;
+   
+}
+.login-details::before{
+     content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width:100%;
+    background-image:url(../img/vector.jpg);
+    background-size: 300%;
+    background-repeat: no-repeat;
+    background-position: 55%;
+    z-index: -1;
+}
+.login-details-space{
+margin-left: 20%;
+
+}
+.login-details h1{
+    font-size: 40px;
+}
+.login-details a{
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+}
+.container input{
+flex-direction: column;
+color: #fff;
+}
+section input{
+display: flex;
+border:2.5px solid #ef8854;
+border-radius: 5px;
+background: none;
+width:80%;
+height: 40px;
+box-sizing: border-box;
+}   
+.input-box{
+margin-bottom: 4%;
+}.input-box label{
+    background-color:black;
+    position: relative;
+    top: 10px;
+    left: 7px;
+}
+.log-in{
+    color: #fff;
+    background: #ef8854;
+    border: 1px solid #ef8854;
+    width: 80%;
+    height: 40px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5%;
+    cursor: pointer;
+}.Signin{
+    font-size: 18px;
+    text-align: center;
+    left: 50%;
+
+}.line{
+    border-top: 2px solid #ef8854;
+    width:16%;
+    display: inline-block;
+    margin: 3px 20px;
+    box-sizing: border-box;
+}
+.or{
+   text-align: center;   
+    margin-bottom: 6%;
+    margin-top: 3%;
+    margin-left: 4%;
+}
+.Signin a{
+color: blue;
+}
+.naming-flex{
+    display: flex;
+    justify-content: space-between;
+   box-sizing: border-box;
+   margin: 0;
+   gap: 20px;
+}
+ .naming-flex div{
+flex: 1;
+}
+.naming-flex input{
+display: flex;
+width: 66%;
+}
+.Last-name{
+    margin-left: -20%;
+}
+@media only screen and (max-width:800px) {
+.logo-image, .fluto-design h2 {
+  top: 10%;
+}
+.jacket-image {
+ top: 55%;
+}
+}
+@media only screen and (max-width:450px) {
+    .container, .content{
+        flex-direction: column;
+    }
+    .fluto-design{
+    width: 100%;
+   min-height: 100vh;
+      
+}
+
+.jacket-image{
+    position: absolute;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    left: 0;
+}
+.logo-image, .fluto-design h2{
+    position: relative;
+    top: 10%;
+    margin: 0 auto;
+}
+.login-details{
+   width: 100%;
+   min-height: 100vh;
+}
+}
+@media only screen and (max-width:375px) {
+.login-details h1{
+    font-size: 30px;
+}
+}

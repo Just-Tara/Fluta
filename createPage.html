@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/homePage.css">
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+<title>Create Account</title>
+</head>
+<body>
+  <div class="container">
+    <section class="fluto-design">
+      <div>
+        <img src="img/logo.jpg" alt="FLuta logo" class="logo-image">
+        <h2>Design your future today<br>with fluta.</h2>
+        <img src="img/jacket.png" alt=" jacket image" class="jacket-image">
+      </div>
+    </section>
+
+    <section class="login-details">
+      <div class="login-details-space">
+        <h1>Create Account</h1>
+        <div class="input-box input-box2">
+          <div class="naming-flex">
+            <div>
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName">
+            </div>
+            <div class="Last-name">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName">
+            </div>
+          </div>
+          <label for="emailAddress">Email</label>
+          <input type="email" id="emailAddress">
+          <label for="Password1">Password</label>
+          <input type="password" id="Password1">
+          <label for="Password2">Confirm password</label>
+          <input type="password" id="Password2">
+        </div>
+
+        <div>
+          <button class="log-in" id="createAccount">Create Account</button>
+        </div>
+      </div>
+
+      <p class="or"><span class="line"></span>Or<span class="line"></span></p>
+      
+      <div style="width:52%; margin: 0 auto;">
+      <div id="g_id_onload"
+     data-client_id= "963192460199-4ggl2r5qccti4ett7hfppv7mlcdi2dhf.apps.googleusercontent.com"
+     data-callback="handleCredentialResponse">
+</div>
+
+<div class="g_id_signin"
+     data-type="standard"
+     data-size="large"
+     data-theme="outline"
+     data-text="sign_in_with"
+     data-shape="rectangular"
+     data-logo_alignment="center">
+</div> 
+</div>
+      <p class="Signin">Already Member? <a href="loginPage.html">Log in</a></p>
+    </section>
+  </div>
+  
+
+  <script type="module" src="scripts/createAccount.js"></script>
+
+</body>
+</html>
