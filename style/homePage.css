@@ -238,22 +238,7 @@ width: 66%;
         flex-direction: column;
     }
     .fluto-design{
-    width: 100%;
-   min-height: 100vh;
-      
-}
-
-.jacket-image{
-    position: absolute;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    left: 0;
-}
-.logo-image, .fluto-design h2{
-    position: relative;
-    top: 10%;
-    margin: 0 auto;
+    display:none;
 }
 .login-details{
    width: 100%;
