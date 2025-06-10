@@ -181,13 +181,6 @@ margin-bottom: 4%;
     font-size: 18px;
     margin-bottom: 5%;
     cursor: pointer;
-}.google-btn-wrapper {
-  width: 100%;         
-  margin: 0 auto;        
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px 0;
 }
 .Signin{
     font-size: 18px;
