@@ -182,7 +182,6 @@ margin-bottom: 4%;
     margin-bottom: 5%;
     cursor: pointer;
 }.google-btn-wrapper {
-    max-width:52%;  
   width: 100%;         
   margin: 0 auto;        
   display: flex;
